@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="@drawable/appbg"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MicroCredit"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        android:fontFamily="@font/league_spartan_extrabold"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/amount"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/poppinslight"
+        android:hint="Amount"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/instalment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Inst No."
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/poppinslight"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:id="@+id/intrestRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Intrest Rate"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/poppinslight"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinslight"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:hint="Monthly Inst.:"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/btn"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Button"
+        android:textColor="@color/black"
+        android:textSize="33sp" />
+
+
+</LinearLayout>
